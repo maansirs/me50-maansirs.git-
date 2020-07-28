@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<head>
+  <title> Advanced Search </title>
+  <style>
+    h4{
+      color: indianred;
+      position: relative;
+      font-family: Arial, Helvetica, sans-serif;
+      top: 50px;
+      left: 40px;
+    }
+    h6 {
+      color: black;
+      position: relative;
+      font-family: Arial, Helvetica, sans-serif;
+      top: 120px;
+      left: 40px;
+    }
+
+    #top {
+
+      position: relative;
+      bottom: 35px;
+      right: 2px;
+      text-align: right;
+
+
+    }
+
+    #page1 {
+      position:relative;
+      right: 90px;
+      font-family:  Arial, Helvetica, sans-serif;
+      color: dimgray;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+
+
+
+
+    #words {
+      position: relative;
+      bottom: 0.5px;
+
+    }
+    table {
+
+      position: relative;
+      left: 40px;
+      top: 120px;
+    }
+
+    .spaces {
+      color: transparent;
+    }
+    td {
+      font-family:  Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    .form {
+      width: 400px;
+      border-radius: 5px;
+      outline: none;
+      border: solid #0080FF 1px;
+    }
+
+    button {
+      position: relative;
+      top: 200px;
+      left: 600px;
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+  <div id="words">
+      <h4> Advanced Search </h4>
+      <h6> Find pages with... </h6>
+ </div>
+ <div id= "top">
+   <a id="page1" href= "search.html" >Google Search</a>
+ </div>
+ <form  action= "https://google.com/search" method= "GET">
+   <table>
+     <tbody>
+       <tr>
+         <td>
+              <label for= "q"> all these words: </label>
+        </td>
+       <td class="spaces">   .........         </td>
+       <td class= "spaces">    ........        </td>
+       <td class="spaces">   .........         </td>
+       <td class= "spaces">    ........        </td>
+       <td>
+         <input class= "form"  type="text" name="q" value="">
+       </td>
+     </tr>
+     <tr>
+       <td>
+            <label for= "as_epq"> this exact word or phrase: </label>
+
+       </td>
+       <td class="spaces">   .........         </td>
+       <td class= "spaces">    ........        </td>
+       <td class="spaces">   .........         </td>
+       <td class= "spaces">    ........        </td>
+       <td>
+         <input class= "form" type="text" name="as_epq" value= "">
+       </td>
+     </tr>
+     <tr>
+       <td>
+            <label for= "as_oq"> any of these words: </label>
+       </td>
+       <td class="spaces">   .........         </td>
+       <td class= "spaces">    ........        </td>
+       <td class="spaces">   .........         </td>
+       <td class= "spaces">    ........        </td>
+       <td>
+         <input class= "form" type="text" name="as_oq" value="">
+       </td>
+     </tr>
+     <tr>
+       <td>
+            <label for= "as_eq"> none of these words: </label>
+       </td>
+       <td class="spaces">   .........         </td>
+       <td class= "spaces">    ........        </td>
+       <td class="spaces">   .........         </td>
+       <td class= "spaces">    ........        </td>
+       <td>
+         <input class= "form" type="text" name="as_eq" value= "">
+
+       </td>
+     </tr>
+   </tbody>
+ </table>
+ <button type="submit" class="btn btn-primary">Advanced Search</button>
+</form>
+
+
+
+
+</body>

@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <title>Search</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <style>
+          div>#bar {
+
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+
+/*
+Margin auto centers horizontal elements
+Use datalist in im feeling lucky
+*/
+          }
+        .child{
+          position: relative;
+
+          right: 400px;
+          bottom: 250px;
+          margin: 25%;
+          text-align: center;
+          width: 1166.25px;
+          height: 50px;
+
+        }
+
+
+        .parent {
+          margin-right: 25%;
+          margin-left: 25%;
+          margin-top: 10%;
+          margin-bottom: 25%;
+          text-align: center;
+
+        }
+
+        #theimagediv {
+          border: 3px solid transparent;
+          text-align: center;
+          width: 100%;
+        }
+        #thelogo {
+          width: 61%;
+          height: 42%:
+          border: 3px solid black;
+        }
+        #bar {
+           border-radius: 20px;
+           height: 45px;
+           border: 2px solid #0080FF;
+           outline: none;
+
+        }
+
+        #bar:hover {
+          border: 2px solid #0080FF;
+        }
+
+        #buttons {
+          position:relative;
+          bottom: 415px;
+        }
+
+        #top {
+
+          position: relative;
+          bottom: 1450px;
+          text-align: right;
+
+        }
+
+        #page1 {
+          position:relative;
+          right: 90px;
+          font-family:  Arial, Helvetica, sans-serif;
+          color: dimgray;
+          font-size: 14px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold;
+        }
+
+        #page2 {
+          position:relative;
+          right: 75px;
+          font-family: Arial, Helvetica, sans-serif;
+          color: dimgray;
+          font-size: 14px;
+          font-weight: bold;
+        }
+
+        #first {
+          color: dimgray;
+          font-size: 14px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold;
+        }
+
+        #second {
+          color: dimgray;
+          font-size: 14px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold;
+        }
+
+
+
+        </style>
+    </head>
+    <body>
+
+        <form action="https://google.com/search" method=GET>
+            <div class= "parent">
+              <div id= "theimagediv">
+                <img id= "thelogo" src= "google.jpg" alt= "logo"></img>
+                <div class= "child">
+                  <input id="bar" type="text" name="q" placeholder= "Search Google or type a URL">
+                </div>
+                <div id= "buttons" class= "child">
+                  <input id= "first" class="btn btn-light" type="submit" value="Google Search">
+                  <input   id= "second" class="btn btn-light" type= "submit" name="btnI" value= "I'm Feeling Lucky">
+
+                </div>
+              </div>
+            </div>
+
+        </form>
+        <div id= "top">
+          <a id="page1" href= "images.html" >Images</a>
+          <a id= "page2"href= "advanced.html">Advanced Search</button>
+        </div>
+    </body>
+</html>
